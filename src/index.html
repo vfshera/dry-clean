@@ -587,6 +587,61 @@
           </div>
         </div>
       </section>
+
+      <!-- DELIVERY ADDRESS -->
+      <section class="flex flex-col gap-8 mt-2.5 bg-[#F7FAFF] px-6 py-8">
+        <!-- HEADER -->
+        <div class="flex justify-between items-center">
+          <!-- left -->
+          <div class="flex gap-4 items-center">
+            <div
+              class="bg-blue-2 h-14 text-2xl flex items-center justify-center font-medium text-white aspect-square rounded-full"
+            >
+              2
+            </div>
+
+            <p class="text-blue-2 text-2xl font-medium">Delivery Address</p>
+          </div>
+
+          <button
+            class="uppercase px-7 py-2.5 border border-blue-2 text-blue-2"
+          >
+            Add New Adress
+          </button>
+        </div>
+
+        <!-- ADDRESSES -->
+
+        <div class="grid grid-cols-2 pl-20 gap-5">
+          <!-- address -->
+          <div
+            class="bg-white rounded-md p-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
+          >
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium text-gray-3">Home</p>
+              <div class="flex items-center gap-5">
+                <img src="/public/images/edit.svg" alt="edit" />
+                <img src="/public/images/del.svg" alt="delete" />
+              </div>
+            </div>
+            <p class="text-gray-5 text-lg mt-3">
+              009 London , CA 4321 07868752659
+            </p>
+          </div>
+          <!-- instore address -->
+          <div
+            class="bg-white rounded-md p-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
+          >
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium text-gray-3">instore pickup</p>
+              <div class="flex items-center gap-5">
+                <img src="/public/images/edit.svg" alt="edit" />
+                <img src="/public/images/del.svg" alt="delete" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <aside class="col-span-1">Side</aside>
   </body>
