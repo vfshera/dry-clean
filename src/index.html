@@ -296,7 +296,7 @@
             </div>
             <!-- row -->
             <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
+              class="grid grid-cols-4 place-items-center py-5 rounded-md text-gray-2 text-lg"
             >
               <div class="flex gap-3 items-center w-full col-span-1">
                 <img src="/public/images/photo.svg" alt="photo" />
@@ -660,6 +660,120 @@
         <p class="text-2xl text-gray-3 text-center">
           JUST SEND ME A BAG AND I’LL FILL IT
         </p>
+      </div>
+
+      <!-- PRICE ESTIMATE -->
+
+      <div
+        class="bg-white rounded-md py-6 px-5 flex flex-col gap-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
+      >
+        <!-- HEADER -->
+        <div class="flex items-center justify-between">
+          <p class="uppercase text-2xl font-bold text-gray-3">
+            Price Estimator
+          </p>
+          <a
+            href="#"
+            class="text-blue-2 px-6 py-2 font-bold border border-blue-2 rounded"
+            >Reset</a
+          >
+        </div>
+
+        <p class="text-[#8f8f8f] text-lg leading-6">
+          Use this calculator to get a rough total of your order. No need to
+          list the actual items when you schedule a collection.
+        </p>
+
+        <!-- orders -->
+
+        <div class="orders flex flex-col gap-2">
+          <!-- order -->
+          <div class="flex justify-between items-center">
+            <p class="text-blue-4 text-xl">Estimate</p>
+            <!-- adjust -->
+            <div class="flex gap-4 items-center text-[#08090A]">
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                -
+              </button>
+              <span>1</span>
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                +
+              </button>
+            </div>
+            <!-- amount -->
+            <p class="text-blue-4 text-xl font-medium">£320.45</p>
+          </div>
+          <!-- order -->
+          <div class="flex justify-between items-center">
+            <p class="text-blue-4 text-xl">Estimate</p>
+            <!-- adjust -->
+            <div class="flex gap-4 items-center text-[#08090A]">
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                -
+              </button>
+              <span>1</span>
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                +
+              </button>
+            </div>
+            <!-- amount -->
+            <p class="text-blue-4 text-xl font-medium">£320.45</p>
+          </div>
+          <!-- order -->
+          <div class="flex justify-between items-center">
+            <p class="text-blue-4 text-xl">Estimate</p>
+            <!-- adjust -->
+            <div class="flex gap-4 items-center text-[#08090A]">
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                -
+              </button>
+              <span>1</span>
+              <button
+                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+              >
+                +
+              </button>
+            </div>
+            <!-- amount -->
+            <p class="text-blue-4 text-xl font-medium">£320.45</p>
+          </div>
+
+          <hr class="h-2 mt-2 bg-[#f4f4f4]" />
+
+          <!-- totals -->
+          <div class="flex mt-4 justify-between items-center">
+            <p class="text-blue-4 text-xl font-bold">Estimate</p>
+
+            <!-- amount -->
+            <p class="text-blue-4 text-xl font-bold">£320.45</p>
+          </div>
+          <button
+            class="py-5 text-center bg-blue-2 w-full mt-5 rounded text-white font-bold"
+          >
+            Contiue Order
+          </button>
+        </div>
+
+        <!-- minimum order -->
+        <div class="flex flex-col gap-5">
+          <p class="uppercase text-lg font-bold text-gray-3">
+            Minimum order value is £15.
+          </p>
+          <p class="text-[#8f8f8f] text-lg leading-6">
+            Please note that the final price may vary and it will be calculated
+            after the cleaning process.
+          </p>
+        </div>
       </div>
     </aside>
   </body>
