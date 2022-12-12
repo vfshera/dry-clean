@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="grid grid-cols-3 px-[130px] py-[140px] gap-11">
+  <body class="grid grid-cols-3 px-5 lg:px-[130px] py-14 lg:py-[140px] gap-11">
     <main class="col-span-2">
       <!-- HEADER -->
-      <header class="pr-[100px]">
-        <h1 class="text-[50px] text-blue-1 font-bold leading-[62px]">
-          Dry Cleaning & Laundary <br />
+      <header class="pr-10 lg:pr-[100px]">
+        <h1
+          class="text-4xl lg:text-[50px] text-blue-1 font-bold lg:leading-[62px]"
+        >
+          Dry Cleaning & Laundary <br class="hidden lg:block" />
           Prices
         </h1>
         <p class="mt-5 break-words text-lg text-blue-5">
@@ -21,12 +23,11 @@
       <!-- DELIVERY -->
 
       <div
-        class="rounded-md bg-blue-6 py-7 px-6 mt-6 mb-[50px] flex justify-between items-center"
+        class="rounded-md bg-blue-6 py-4 lg:py-7 px-4 lg:px-6 mt-6 mb-[50px] flex justify-between items-center"
       >
         <div class="flex items-center gap-2">
           <svg
-            width="28"
-            height="28"
+            class="lg:h-7 h-5 aspect-square"
             viewBox="0 0 28 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -41,11 +42,15 @@
             />
           </svg>
 
-          <p class="underline uppercase text-lg text-blue-2 font-medium">
+          <p
+            class="underline uppercase text-base lg:text-lg text-blue-2 font-medium"
+          >
             Express delivery in 24 hours
           </p>
         </div>
-        <a class="underline uppercase text-lg text-blue-2 font-medium" href="#"
+        <a
+          class="underline uppercase text-base lg:text-lg text-blue-2 font-medium"
+          href="#"
           >download prices</a
         >
       </div>
@@ -53,19 +58,19 @@
       <!-- SERVICES -->
 
       <section
-        class="bg-light rounded-md px-[60px] py-[55px] flex justify-between gap-6"
+        class="bg-light rounded-md px-10 lg:px-[60px] py-12 lg:py-[55px] flex justify-between gap-6"
       >
         <!-- col-1 -->
-        <div class="flex flex-col items-center w-max gap-6">
+        <div class="flex flex-col justify-between items-center w-max gap-6">
           <!-- service -->
 
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/dryclean.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="dry cleaning"
             />
-            <p class="text-black">Dry Cleaning</p>
+            <p class="text-sm lg:text-base text-black">Dry Cleaning</p>
           </div>
 
           <!-- service -->
@@ -73,24 +78,24 @@
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/shirt.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="dry cleaning"
             />
-            <p class="text-black">Shirt Service</p>
+            <p class="text-sm lg:text-base text-black">Shirt Service</p>
           </div>
         </div>
 
         <!-- col-2 -->
-        <div class="flex flex-col items-center w-max gap-6">
+        <div class="flex flex-col justify-between items-center w-max gap-6">
           <!-- service -->
 
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/duvet.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="duvet"
             />
-            <p class="text-black">Duvet & Pillow</p>
+            <p class="text-sm lg:text-base text-black">Duvet & Pillow</p>
           </div>
 
           <!-- service -->
@@ -98,25 +103,25 @@
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/ironing.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="dry cleaning"
             />
-            <p class="text-black">Ironing Service</p>
+            <p class="text-sm lg:text-base text-black">Ironing Service</p>
           </div>
         </div>
 
         <!-- col-3 -->
 
-        <div class="flex flex-col items-center w-max gap-6">
+        <div class="flex flex-col justify-between items-center w-max gap-6">
           <!-- service -->
 
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/repair.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="repair"
             />
-            <p class="text-black text-center">
+            <p class="text-sm lg:text-base text-black text-center">
               Alternation & Repairs <br />in Mill Hill
             </p>
           </div>
@@ -126,10 +131,10 @@
           <div class="service flex flex-col items-center gap-4 w-max">
             <img
               src="/public/images/wash.svg"
-              class="h-[86px] aspect-square"
+              class="h-16 lg:h-[86px] aspect-square"
               alt="dry cleaning"
             />
-            <p class="text-black">Service Wash</p>
+            <p class="text-sm lg:text-base text-black">Service Wash</p>
           </div>
         </div>
       </section>
@@ -143,192 +148,58 @@
 
         <div class="flex flex-col">
           <!-- table-header -->
-          <div class="grid grid-cols-4 py-5 bg-blue-2 rounded-md text-white">
-            <p class="pl-7">Item</p>
-            <p>Name of Service</p>
-            <p>Price</p>
-            <p class="pr-7">Add / Remove</p>
+          <div
+            class="grid grid-cols-6 lg:grid-cols-4 py-5 bg-blue-2 rounded-md text-white"
+          >
+            <p
+              class="text-sm lg:text-base pl-4 col-span-2 lg:col-span-1 lg:pl-7"
+            >
+              Item
+            </p>
+            <p class="text-sm lg:text-base col-span-2 lg:col-span-1">
+              Name of Service
+            </p>
+            <p class="text-sm lg:text-base col-span-1">Price</p>
+            <p class="text-sm lg:text-base col-span-1 pr-4 lg:pr-7">
+              Add / Remove
+            </p>
           </div>
 
           <!-- table-rows -->
           <div class="flex flex-col">
             <!-- row -->
             <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
+              class="grid grid-cols-6 lg:grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
             >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
               <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
+                class="flex gap-3 items-center w-full col-span-2 lg:col-span-1"
+              >
+                <img
+                  src="/public/images/photo.svg"
+                  class="h-9 lg:h-[52px] aspect-square"
+                  alt="photo"
+                />
+                <p class="text-sm lg:text-base">Hung Shirt</p>
+              </div>
+              <div
+                class="text-sm lg:text-base text-left w-full col-span-2 lg:col-span-1"
+              >
+                Wash & Iron (Hug)
+              </div>
+              <div class="text-sm lg:text-base text-left w-full col-span-1">
+                £150.00
+              </div>
+              <div
+                class="flex gap-2 lg:gap-4 items-center text-[#08090A] w-full col-span-1"
               >
                 <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                  class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
                 >
                   -
                 </button>
                 <span>1</span>
                 <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <!-- row -->
-            <div
-              class="grid grid-cols-4 place-items-center py-5 rounded-md text-gray-2 text-lg"
-            >
-              <div class="flex gap-3 items-center w-full col-span-1">
-                <img src="/public/images/photo.svg" alt="photo" />
-                <p>Hung Shirt</p>
-              </div>
-              <div class="text-left w-full col-span-1">Wash & Iron (Hug)</div>
-              <div class="text-left w-full col-span-1">£150.00</div>
-              <div
-                class="flex gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-                >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                  class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
                 >
                   +
                 </button>
@@ -345,22 +216,24 @@
         <div
           class="bg-blue-2 px-8 py-5 flex justify-between items-center rounded-t-[14px]"
         >
-          <p class="uppercase text-white text-2xl font-bold">AUTO APPROVALS</p>
+          <p class="uppercase text-white text-xl lg:text-2xl font-bold">
+            AUTO APPROVALS
+          </p>
           <img
             src="/public/images/question.svg"
-            class="h-8 aspect-square"
+            class="h-6 lg:h-8 aspect-square"
             alt="quest"
           />
         </div>
 
         <!-- content -->
         <div
-          class="border border-gray-1/20 px-8 pb-10 pt-7 flex flex-col gap-9 rounded-b-[14px]"
+          class="border border-gray-1/20 px-6 lg:px-8 pb-10 pt-7 flex flex-col gap-9 rounded-b-[14px]"
         >
           <!-- Stain and Damage Approval -->
 
-          <div class="bg-[#F7FAFF] px-7 py-9">
-            <p class="text-black font-medium text-xl">
+          <div class="bg-[#F7FAFF] px-5 lg:px-7 py-7 lg:py-9">
+            <p class="text-black font-medium text-lg lg:text-xl">
               Stain and Damage Approval
             </p>
             <p class="text-gray-1 mt-3">
@@ -368,7 +241,9 @@
               items with stains or damages without seeking your consent.
             </p>
             <div class="mt-7 flex justify-between items-center">
-              <p class="text-black font-medium text-xl">Auto Approve</p>
+              <p class="text-black font-medium text-lg lg:text-xl">
+                Auto Approve
+              </p>
 
               <!-- toggle -->
               <div class="flex items-center justify-center w-max">
@@ -390,8 +265,10 @@
           </div>
 
           <!-- Wash and Fold Approval -->
-          <div class="bg-[#F7FAFF] px-7 py-9">
-            <p class="text-black font-medium text-xl">Wash and Fold Approval</p>
+          <div class="bg-[#F7FAFF] px-5 lg:px-7 py-7 lg:py-9">
+            <p class="text-black font-medium text-lg lg:text-xl">
+              Wash and Fold Approval
+            </p>
             <p class="text-gray-1 mt-3">
               In order to protect your delicate & expensive items, our team will
               flag items that we believe might not be suitable to wash & fold
@@ -415,7 +292,7 @@
                         class="dot absolute left-1 top-1 bg-white h-3 aspect-square rounded-full transition"
                       ></div>
                       <div class="choice flex flex-col gap-2">
-                        <p class="proceed-choice text-gray-1">
+                        <p class="proceed-choice text-gray-1 break-words">
                           Alway notify me of the items in question so i can
                           decide(Default)
                         </p>
@@ -425,7 +302,7 @@
                             class="h-7 aspect-square"
                             alt="info"
                           />
-                          <p class="text-gray-1">
+                          <p class="text-gray-1 break-words">
                             If the laundry team does not receive your approval
                             in time, <br />
                             items will be returned unprocessed
@@ -452,7 +329,7 @@
                         class="dot absolute left-1 top-1 bg-white h-3 aspect-square rounded-full transition"
                       ></div>
                       <div class="choice flex flex-col gap-2">
-                        <p class="proceed-choice text-gray-1">
+                        <p class="proceed-choice text-gray-1 break-words">
                           Automatically transfer items to the clean & press
                           service and notify me
                         </p>
@@ -477,7 +354,7 @@
                         class="dot absolute left-1 top-1 bg-white h-3 aspect-square rounded-full transition"
                       ></div>
                       <div class="choice flex flex-col gap-2">
-                        <p class="proceed-choice text-gray-1">
+                        <p class="proceed-choice text-gray-1 break-words">
                           Always wash any item i send in the wash
                         </p>
                       </div>
@@ -499,12 +376,12 @@
             <!-- left -->
             <div class="flex gap-4 items-center">
               <div
-                class="bg-blue-2 h-14 text-2xl flex items-center justify-center font-medium text-white aspect-square rounded-full"
+                class="bg-blue-2 h-14 text-xl lg:text-2xl flex items-center justify-center font-medium text-white aspect-square rounded-full"
               >
                 2
               </div>
 
-              <p class="text-blue-2 text-2xl font-medium">
+              <p class="text-blue-2 text-xl lg:text-2xl font-medium">
                 Select Pick up date & time
               </p>
             </div>
@@ -513,7 +390,7 @@
           </div>
 
           <!-- DATES -->
-          <div class="grid grid-cols-2 mt-8 gap-x-3 gap-y-5 pl-20">
+          <div class="grid grid-cols-2 mt-8 gap-x-3 gap-y-5 pl-2 lg:pl-20">
             <!-- date -->
             <label>
               <input type="checkbox" class="peer sr-only" />
@@ -609,12 +486,14 @@
           <!-- left -->
           <div class="flex gap-4 items-center">
             <div
-              class="bg-blue-2 h-14 text-2xl flex items-center justify-center font-medium text-white aspect-square rounded-full"
+              class="bg-blue-2 h-14 text-xl lg:text-2xl flex items-center justify-center font-medium text-white aspect-square rounded-full"
             >
               2
             </div>
 
-            <p class="text-blue-2 text-2xl font-medium">Delivery Address</p>
+            <p class="text-blue-2 text-xl lg:text-2xl font-medium">
+              Delivery Address
+            </p>
           </div>
 
           <button
@@ -626,7 +505,7 @@
 
         <!-- ADDRESSES -->
 
-        <div class="grid grid-cols-2 pl-20 gap-5">
+        <div class="grid grid-cols-2 pl-2 lg:pl-20 gap-5">
           <!-- address -->
           <div
             class="bg-white rounded-md p-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
@@ -638,7 +517,7 @@
                 <img src="/public/images/del.svg" alt="delete" />
               </div>
             </div>
-            <p class="text-gray-5 text-lg mt-3">
+            <p class="text-gray-5 text-base lg:text-lg mt-3">
               009 London , CA 4321 07868752659
             </p>
           </div>
@@ -662,16 +541,16 @@
       <div
         class="bg-white rounded-md py-6 px-7 flex flex-col items-center [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
       >
-        <p class="font-bold text-3xl text-center text-[#848484]">
+        <p class="font-bold text-2xl lg:text-3xl text-center text-[#848484]">
           I am busy today
         </p>
 
         <a
           href="#"
-          class="bg-blue-2 block w-max py-5 px-6 rounded-full text-white text-base mt-2.5 mb-3.5"
+          class="bg-blue-2 block w-max py-3 lg:py-5 px-6 rounded-full text-white text-base mt-2.5 mb-3.5"
           >Skip this step</a
         >
-        <p class="text-2xl text-gray-3 text-center">
+        <p class="text-lg lg:text-2xl text-gray-3 text-center">
           JUST SEND ME A BAG AND I’LL FILL IT
         </p>
       </div>
@@ -682,18 +561,20 @@
         class="bg-white rounded-md py-6 px-5 flex flex-col gap-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
       >
         <!-- HEADER -->
-        <div class="flex items-center justify-between">
-          <p class="uppercase text-2xl font-bold text-gray-3">
+        <div
+          class="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between"
+        >
+          <p class="uppercase text-xl lg:text-2xl font-bold text-gray-3">
             Price Estimator
           </p>
           <a
             href="#"
-            class="text-blue-2 px-6 py-2 font-bold border border-blue-2 rounded"
+            class="text-blue-2 px-6 py-2 font-bold border text-sm lg:text-base border-blue-2 rounded"
             >Reset</a
           >
         </div>
 
-        <p class="text-[#8f8f8f] text-lg leading-6">
+        <p class="text-[#8f8f8f] text-base lg:text-lg leading-6">
           Use this calculator to get a rough total of your order. No need to
           list the actual items when you schedule a collection.
         </p>
@@ -702,77 +583,38 @@
 
         <div class="orders flex flex-col gap-2">
           <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-blue-4 text-xl">Estimate</p>
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <p class="text-blue-4 text-base lg:text-xl">Estimate</p>
             <!-- adjust -->
             <div class="flex gap-4 items-center text-[#08090A]">
               <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
               >
                 -
               </button>
               <span>1</span>
               <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
               >
                 +
               </button>
             </div>
+
             <!-- amount -->
-            <p class="text-blue-4 text-xl font-medium">£320.45</p>
-          </div>
-          <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-blue-4 text-xl">Estimate</p>
-            <!-- adjust -->
-            <div class="flex gap-4 items-center text-[#08090A]">
-              <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-              >
-                +
-              </button>
-            </div>
-            <!-- amount -->
-            <p class="text-blue-4 text-xl font-medium">£320.45</p>
-          </div>
-          <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-blue-4 text-xl">Estimate</p>
-            <!-- adjust -->
-            <div class="flex gap-4 items-center text-[#08090A]">
-              <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                class="rounded h-10 w-10 flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
-              >
-                +
-              </button>
-            </div>
-            <!-- amount -->
-            <p class="text-blue-4 text-xl font-medium">£320.45</p>
+            <p class="text-blue-4 text-base lg:text-xl font-medium">£320.45</p>
           </div>
 
           <hr class="h-2 mt-2 bg-[#f4f4f4]" />
 
           <!-- totals -->
           <div class="flex mt-4 justify-between items-center">
-            <p class="text-blue-4 text-xl font-bold">Estimate</p>
+            <p class="text-blue-4 text-lg lg:text-xl font-bold">Estimate</p>
 
             <!-- amount -->
-            <p class="text-blue-4 text-xl font-bold">£320.45</p>
+            <p class="text-blue-4 text-lg lg:text-xl font-bold">£320.45</p>
           </div>
           <button
-            class="py-5 text-center bg-blue-2 w-full mt-5 rounded text-white font-bold"
+            class="py-3 lg:py-5 text-center bg-blue-2 w-full mt-5 rounded text-white font-bold"
           >
             Contiue Order
           </button>
@@ -780,10 +622,10 @@
 
         <!-- minimum order -->
         <div class="flex flex-col gap-5">
-          <p class="uppercase text-lg font-bold text-gray-3">
+          <p class="uppercase text-base lg:text-lg font-bold text-gray-3">
             Minimum order value is £15.
           </p>
-          <p class="text-[#8f8f8f] text-lg leading-6">
+          <p class="text-[#8f8f8f] text-base lg:text-lg leading-6">
             Please note that the final price may vary and it will be calculated
             after the cleaning process.
           </p>
@@ -793,10 +635,14 @@
       <!-- OFF -->
 
       <div
-        class="bg-blue-2 rounded-3xl py-7 px-9 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
+        class="bg-blue-2 rounded-3xl py-7 px-7 lg:px-9 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
       >
-        <p class="text-[50px] uppercase font-bold mb-4 text-white">£10 OFF</p>
-        <p class="text-4xl leading-[47px] text-[#cdcdcd] uppercase">
+        <p class="text-4xl lg:text-[50px] uppercase font-bold mb-4 text-white">
+          £10 OFF
+        </p>
+        <p
+          class="text-2xl lg:text-4xl lg:leading-[47px] text-[#cdcdcd] uppercase"
+        >
           All Laundry & Dry Cleaning <br />FOR NEW CUSTOMERS
         </p>
       </div>
@@ -810,7 +656,9 @@
           Download our free mobile app
         </p>
 
-        <div class="flex justify-center items-center gap-5">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-5"
+        >
           <img
             class="h-10"
             src="/public/images/appstore-badge.svg"
@@ -829,36 +677,17 @@
       <div
         class="bg-white rounded-md py-8 px-5 flex flex-col gap-6 [box-shadow:0px_6px_20px_rgba(0,0,0,0.04)]"
       >
-        <p class="text-2xl text-gray-3 font-bold">Your Order</p>
+        <p class="text-xl lg:text-2xl text-gray-3 font-bold">Your Order</p>
 
         <div class="flex flex-col gap-5">
           <!-- order -->
           <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Hung Shirt</p>
+            <p class="text-[#A0A0A0] text-base lg:text-lg">Hung Shirt</p>
 
             <!-- amount -->
-            <p class="text-[#A0A0A0] text-xl font-medium">£320.45</p>
-          </div>
-          <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Hung Shirt</p>
-
-            <!-- amount -->
-            <p class="text-[#A0A0A0] text-xl font-medium">£320.45</p>
-          </div>
-          <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Hung Shirt</p>
-
-            <!-- amount -->
-            <p class="text-[#A0A0A0] text-xl font-medium">£320.45</p>
-          </div>
-          <!-- order -->
-          <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Hung Shirt</p>
-
-            <!-- amount -->
-            <p class="text-[#A0A0A0] text-xl font-medium">£320.45</p>
+            <p class="text-[#A0A0A0] text-base lg:text-xl font-medium">
+              £320.45
+            </p>
           </div>
 
           <hr class="h-2 bg-[#f4f4f4]" />
@@ -867,33 +696,33 @@
         <div class="flex flex-col gap-5">
           <!-- subtotals -->
           <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Subtotal:</p>
+            <p class="text-[#A0A0A0] text-base lg:text-lg">Subtotal:</p>
 
             <!-- amount -->
-            <p class="text-[#363636] text-xl font-bold">£320.45</p>
+            <p class="text-[#363636] text-base lg:text-xl font-bold">£320.45</p>
           </div>
           <!-- shipping -->
           <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Shipping:</p>
+            <p class="text-[#A0A0A0] text-base lg:text-lg">Shipping:</p>
 
             <!-- amount -->
-            <p class="text-[#363636] text-xl font-bold">-</p>
+            <p class="text-[#363636] text-base lg:text-xl font-bold">-</p>
           </div>
 
           <!-- tax -->
           <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Tax:</p>
+            <p class="text-[#A0A0A0] text-base lg:text-lg">Tax:</p>
 
             <!-- amount -->
-            <p class="text-[#363636] text-xl font-bold">£320.45</p>
+            <p class="text-[#363636] text-base lg:text-xl font-bold">£320.45</p>
           </div>
 
           <!-- discount -->
           <div class="flex justify-between items-center">
-            <p class="text-[#A0A0A0] text-lg">Discount:</p>
+            <p class="text-[#A0A0A0] text-base lg:text-lg">Discount:</p>
 
             <!-- amount -->
-            <p class="text-[#363636] text-xl font-bold">-</p>
+            <p class="text-[#363636] text-base lg:text-xl font-bold">-</p>
           </div>
 
           <hr class="h-2 bg-[#f4f4f4]" />
@@ -901,10 +730,10 @@
 
         <!-- TOTALS -->
         <div class="flex justify-between mt-3 items-center">
-          <p class="text-[#333131] text-lg font-bold">Totals:</p>
+          <p class="text-[#333131] text-base lg:text-lg font-bold">Totals:</p>
 
           <!-- amount -->
-          <p class="text-[#333131] text-xl font-bold">£320.45</p>
+          <p class="text-[#333131] text-base lg:text-xl font-bold">£320.45</p>
         </div>
       </div>
     </aside>
