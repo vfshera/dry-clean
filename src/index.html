@@ -11,7 +11,7 @@
   >
     <main class="md:col-span-2">
       <!-- HEADER -->
-      <header class="pr-10 lg:pr-[100px]">
+      <header class="md:pr-10 lg:pr-[100px]">
         <h1
           class="text-4xl lg:text-[50px] text-blue-1 font-bold lg:leading-[62px]"
         >
@@ -26,7 +26,7 @@
       <!-- DELIVERY -->
 
       <div
-        class="rounded-md bg-blue-6 py-4 lg:py-7 px-4 lg:px-6 mt-6 mb-[50px] flex justify-between items-center"
+        class="rounded-md bg-blue-6 py-3 md:py-4 lg:py-7 px-4 lg:px-6 mt-6 mb-[50px] flex justify-between items-center"
       >
         <div class="flex items-center gap-2">
           <svg
@@ -46,13 +46,13 @@
           </svg>
 
           <p
-            class="underline uppercase text-base lg:text-lg text-blue-2 font-medium"
+            class="underline uppercase text-xs md:text-base lg:text-lg text-blue-2 font-medium"
           >
             Express delivery in 24 hours
           </p>
         </div>
         <a
-          class="underline uppercase text-base lg:text-lg text-blue-2 font-medium"
+          class="underline uppercase text-xs md:text-base lg:text-lg text-blue-2 font-medium"
           href="#"
           >download prices</a
         >
@@ -61,13 +61,15 @@
       <!-- SERVICES -->
 
       <section
-        class="bg-light rounded-md px-10 lg:px-[60px] py-12 lg:py-[55px] flex justify-between gap-6"
+        class="bg-light rounded-md px-10 lg:px-[60px] py-12 lg:py-[55px] flex flex-col md:flex-row md:justify-between gap-8 md:gap-6"
       >
         <!-- col-1 -->
-        <div class="flex flex-col justify-between items-center w-max gap-6">
+        <div
+          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+        >
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/dryclean.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -78,7 +80,7 @@
 
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/shirt.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -89,10 +91,12 @@
         </div>
 
         <!-- col-2 -->
-        <div class="flex flex-col justify-between items-center w-max gap-6">
+        <div
+          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+        >
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/duvet.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -103,7 +107,7 @@
 
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/ironing.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -115,10 +119,12 @@
 
         <!-- col-3 -->
 
-        <div class="flex flex-col justify-between items-center w-max gap-6">
+        <div
+          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+        >
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/repair.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -131,7 +137,7 @@
 
           <!-- service -->
 
-          <div class="service flex flex-col items-center gap-4 w-max">
+          <div class="service flex flex-col items-center gap-4 w-1/2 md:w-max">
             <img
               src="/public/images/wash.svg"
               class="h-16 lg:h-[86px] aspect-square"
@@ -575,7 +581,7 @@
       >
         <!-- HEADER -->
         <div
-          class="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between"
+          class="flex md:flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between"
         >
           <p class="uppercase text-xl lg:text-2xl font-bold text-gray-3">
             Price Estimator
@@ -656,7 +662,7 @@
         <p
           class="text-2xl lg:text-4xl lg:leading-[47px] text-[#cdcdcd] uppercase"
         >
-          All Laundry & Dry Cleaning <br />FOR NEW CUSTOMERS
+          All Laundry & Dry Cleaning <br class="md:block" />FOR NEW CUSTOMERS
         </p>
       </div>
 
@@ -670,7 +676,7 @@
         </p>
 
         <div
-          class="flex flex-col lg:flex-row justify-center items-center gap-5"
+          class="flex md:flex-col lg:flex-row justify-center items-center gap-5"
         >
           <img
             class="h-10"
