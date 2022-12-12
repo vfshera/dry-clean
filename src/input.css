@@ -8,14 +8,6 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-/* toggle */
-input#toggle:checked ~ .dot {
-  transform: translateX(100%);
-  background-color: #fff;
-}
-input#toggle:checked ~ .block {
-  @apply bg-blue-2;
-}
 /* proceed */
 
 input#proceed:checked ~ .block {

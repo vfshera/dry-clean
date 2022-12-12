@@ -449,7 +449,7 @@
         class="[box-shadow:0px_24px_32px_-3px_rgba(3,9,50,0.04)] overflow-hidden bg-white rounded-b-[14px] mt-[50px]"
       >
         <div
-          class="bg-blue-2 px-8 py-5 flex justify-between items-center rounded-t-[14px]"
+          class="bg-blue-2 px-8 py-4 lg:py-5 flex justify-between items-center rounded-t-[14px]"
         >
           <p class="uppercase text-white text-xl lg:text-2xl font-bold">
             AUTO APPROVALS
@@ -486,12 +486,14 @@
                   <!-- toggle -->
                   <div class="relative">
                     <!-- input -->
-                    <input type="checkbox" id="toggle" class="sr-only" />
+                    <input type="checkbox" id="toggle" class="peer sr-only" />
                     <!-- line -->
-                    <div class="block bg-gray-1 w-9 h-5 rounded-full"></div>
+                    <div
+                      class="block bg-gray-1 peer-checked:bg-blue-2 w-9 h-5 rounded-full"
+                    ></div>
                     <!-- dot -->
                     <div
-                      class="dot absolute left-0.5 top-0.5 bg-white h-4 aspect-square rounded-full transition"
+                      class="dot peer-checked:translate-x-full absolute left-0.5 top-0.5 bg-white h-4 aspect-square rounded-full transition"
                     ></div>
                   </div>
                 </label>
