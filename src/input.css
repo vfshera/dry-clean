@@ -7,3 +7,12 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+
+/* toggle */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #fff;
+}
+input:checked ~ .block {
+  @apply bg-blue-2;
+}
