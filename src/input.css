@@ -9,10 +9,18 @@ body {
 }
 
 /* toggle */
-input:checked ~ .dot {
+input#toggle:checked ~ .dot {
   transform: translateX(100%);
   background-color: #fff;
 }
-input:checked ~ .block {
+input#toggle:checked ~ .block {
   @apply bg-blue-2;
+}
+/* proceed */
+
+input#proceed:checked ~ .block {
+  @apply bg-blue-2;
+}
+input#proceed:checked ~ .choice > .proceed-choice {
+  @apply text-black;
 }
