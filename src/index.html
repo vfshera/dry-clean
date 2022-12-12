@@ -18,7 +18,7 @@
           Dry Cleaning & Laundary <br class="hidden lg:block" />
           Prices
         </h1>
-        <p class="mt-5 break-words text-lg text-blue-5">
+        <p class="mt-5 break-words text-base md:text-lg text-blue-5">
           loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
         </p>
       </header>
@@ -65,7 +65,7 @@
       >
         <!-- col-1 -->
         <div
-          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+          class="flex md:flex-col justify-between md:items-center w-full md:w-max gap-6"
         >
           <!-- service -->
 
@@ -92,7 +92,7 @@
 
         <!-- col-2 -->
         <div
-          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+          class="flex md:flex-col justify-between md:items-center w-full md:w-max gap-6"
         >
           <!-- service -->
 
@@ -120,7 +120,7 @@
         <!-- col-3 -->
 
         <div
-          class="flex md:flex-col justify-between items-center w-full md:w-max gap-6"
+          class="flex md:flex-col justify-between md:items-center w-full md:w-max gap-6"
         >
           <!-- service -->
 
@@ -157,63 +157,57 @@
           suits
         </p>
 
-        <div class="flex flex-col">
-          <!-- table-header -->
-          <div
-            class="grid grid-cols-6 lg:grid-cols-4 py-5 bg-blue-2 rounded-md text-white"
-          >
-            <p
-              class="text-sm lg:text-base pl-4 col-span-2 lg:col-span-1 lg:pl-7"
-            >
-              Item
-            </p>
-            <p class="text-sm lg:text-base col-span-2 lg:col-span-1">
-              Name of Service
-            </p>
-            <p class="text-sm lg:text-base col-span-1">Price</p>
-            <p class="text-sm lg:text-base col-span-1 pr-4 lg:pr-7">
-              Add / Remove
-            </p>
-          </div>
-
-          <!-- table-rows -->
-          <div class="flex flex-col">
-            <!-- row -->
+        <div class="overflow-auto">
+          <div class="flex flex-col w-max">
+            <!-- table-header -->
             <div
-              class="grid grid-cols-6 lg:grid-cols-4 place-items-center py-5 border-b-2 border-[#f4f4f4] rounded-md text-gray-2 text-lg"
+              class="grid grid-cols-6 lg:grid-cols-4 py-5 text-sm lg:text-base bg-blue-2 rounded-md whitespace-nowrap text-white"
             >
+              <div class="pl-4 col-span-2 lg:col-span-1 lg:pl-7">Item</div>
+              <div class="col-span-2 lg:col-span-1">Name of Service</div>
+              <div class="col-span-1">Price</div>
+              <div class="col-span-1 pr-4 lg:pr-7">Add / Remove</div>
+            </div>
+
+            <!-- table-rows -->
+            <div class="flex flex-col">
+              <!-- row -->
               <div
-                class="flex gap-3 items-center w-full col-span-2 lg:col-span-1"
+                class="grid grid-cols-6 lg:grid-cols-4 place-items-center py-5 border-b-2 whitespace-nowrap border-[#f4f4f4] rounded-md text-gray-2 text-lg"
               >
-                <img
-                  src="/public/images/photo.svg"
-                  class="h-9 lg:h-[52px] aspect-square"
-                  alt="photo"
-                />
-                <p class="text-sm lg:text-base">Hung Shirt</p>
-              </div>
-              <div
-                class="text-sm lg:text-base text-left w-full col-span-2 lg:col-span-1"
-              >
-                Wash & Iron (Hug)
-              </div>
-              <div class="text-sm lg:text-base text-left w-full col-span-1">
-                £150.00
-              </div>
-              <div
-                class="flex gap-2 lg:gap-4 items-center text-[#08090A] w-full col-span-1"
-              >
-                <button
-                  class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                <div
+                  class="flex gap-3 items-center w-full col-span-2 lg:col-span-1"
                 >
-                  -
-                </button>
-                <span>1</span>
-                <button
-                  class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                  <img
+                    src="/public/images/photo.svg"
+                    class="h-9 lg:h-[52px] aspect-square"
+                    alt="photo"
+                  />
+                  <p class="text-sm lg:text-base">Hung Shirt</p>
+                </div>
+                <div
+                  class="text-sm lg:text-base text-left w-full col-span-2 lg:col-span-1"
                 >
-                  +
-                </button>
+                  Wash & Iron (Hug)
+                </div>
+                <div class="text-sm lg:text-base text-left w-full col-span-1">
+                  £150.00
+                </div>
+                <div
+                  class="flex gap-2 lg:gap-4 items-center text-[#08090A] w-full col-span-1"
+                >
+                  <button
+                    class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                  >
+                    -
+                  </button>
+                  <span>1</span>
+                  <button
+                    class="rounded h-6 lg:h-10 aspect-square flex justify-center items-center font-medium text-xl bg-[#F5FAFF]"
+                  >
+                    +
+                  </button>
+                </div>
               </div>
             </div>
           </div>
