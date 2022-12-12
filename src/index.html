@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Tailwind Html Starter
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="grid grid-cols-3 px-[130px] py-[140px] gap-6">
+    <main class="col-span-2">
+      <!-- HEADER -->
+      <header class="pr-[100px]">
+        <h1 class="text-[50px] text-blue-1 font-bold leading-[62px]">
+          Dry Cleaning & Laundary <br />
+          Prices
+        </h1>
+        <p class="mt-5 break-words text-lg text-blue-5">
+          loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
+        </p>
+      </header>
+
+      <!-- DELIVERY -->
+
+      <div
+        class="rounded-md bg-blue-6 py-7 px-6 mt-6 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.9035 4.63733H13.0369V15.0271L19.781 18.2324L20.5823 16.5465L14.9035 13.8475V4.63733Z"
+              fill="#1D4292"
+            />
+            <path
+              d="M14 0C6.26803 0 0 6.26803 0 14C0 21.732 6.26803 28 14 28C21.732 28 28 21.732 28 14C28 6.26803 21.732 0 14 0ZM14 26.1333C7.29896 26.1333 1.86667 20.701 1.86667 14C1.86667 7.29896 7.29896 1.86667 14 1.86667C20.701 1.86667 26.1333 7.29896 26.1333 14C26.1333 20.701 20.701 26.1333 14 26.1333Z"
+              fill="#1D4292"
+            />
+          </svg>
+
+          <p class="underline uppercase text-lg text-blue-2 font-medium">
+            Express delivery in 24 hours
+          </p>
+        </div>
+        <a class="underline uppercase text-lg text-blue-2 font-medium" href="#"
+          >download prices</a
+        >
+      </div>
+    </main>
+    <aside class="col-span-1">Side</aside>
+  </body>
 </html>
